@@ -1,0 +1,139 @@
+<html>
+    
+<style>
+@import url(stylee.css);    
+</style>
+    
+<header>
+<aside></aside>
+<p></p>
+<p></p>
+</header>
+ 
+<h1>Tracking investments into SDG 16: Peace, Justice and strong institutions</h1>
+ 
+<aside></aside>
+ 
+<p>This sankey diagram visualizes how expenditures directed towards the Sustainable Development Goal 16 can be measured using the OECD's <a href="https://stats.oecd.org/Index.aspx?DataSetCode=CRS1">ODA Data</a>. The chords connect the Goal's individual <a href="https://sustainabledevelopment.un.org/sdg16">indicators</a> with the respective <a href="http://www.oecd.org/dac/stats/purposecodessectorclassification.htm">purpose codes</a> of the OECD <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm">Creditor Reporting System</a>.</p>
+    
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+['SDG 16.1','Conflict prevention and resolution, peace and security [152]',4],
+['Conflict prevention and resolution, peace and security [152]','Security system management and reform [15210]',1],
+['Conflict prevention and resolution, peace and security [152]','Civilian peace-building, conflict prevention and resolution [15220]',1],
+['Conflict prevention and resolution, peace and security [152]','Participation in international peacekeeping operations [15230]',1],
+['Conflict prevention and resolution, peace and security [152]','Removal of land mines and explosive remnants of war [15250]',1],
+['SDG 16.1','Government and civil society, general [151]',1],
+['Government and civil society, general [151]','Ending violence against women and girls [15180]',1],
+['SDG 16.2','Conflict prevention and resolution, peace and security [152]',1],
+['Conflict prevention and resolution, peace and security [152]','Child soldiers (Prevention and demobilisation) [15261]',1],
+['SDG 16.3','Government and civil society, general [151]',1],
+['Government and civil society, general [151]','Legal and judicial development [15130]',1],
+['SDG 16.4','Conflict prevention and resolution, peace and security [152]',1],
+['Conflict prevention and resolution, peace and security [152]','Reintegration and SALW control [15240]',1],
+['SDG 16.4','Banking and Financial Services [240]',2],
+['Banking and Financial Services [240]','Financial policy and administrative management [24010]',1],
+['Banking and Financial Services [240]','Education/training in banking and financial services [24081]',1],
+['SDG 16.4','Other social infrastructure and services [160]',1],
+['Other social infrastructure and services [160]','Narcotics control [16063]',1],
+['SDG 16.5','Government and civil society, general [151]',1],
+['Government and civil society, general [151]','Anti-corruption organisations and institutions [15113]',1],
+['SDG 16.6','Government and civil society, general [151]',4],
+['Government and civil society, general [151]','Public sector policy and administrative management [15110]',1],
+['Government and civil society, general [151]','Public Finance Management (PFM) [15111]',1],
+['Government and civil society, general [151]','Decentralisation and support to subnational government [15112]',1],
+['Government and civil society, general [151]','Women’s equality organisations and institutions [15170]',1],
+['SDG 16.6','Other social infrastructure and services [160]',3],
+['Other social infrastructure and services [160]','Social/ welfare services [16010]',1],
+['Other social infrastructure and services [160]','Employment policy and administrative management [16020]',1],
+['Other social infrastructure and services [160]','Statistical capacity building [16062]',1],
+['SDG 16.6','Education [110]',1],
+['Education [110]','Education policy and administrative management [11110]',1],
+['SDG 16.6','Health [120]',1],
+['Health [120]','Health policy and administrative management [12110]',1],
+['SDG 16.6','Population policies [130]',1],
+['Population policies [130]','Population policy and administrative management [13010]',1],
+['SDG 16.6','Water and Sanitation [140]',1],
+['Water and Sanitation [140]','Water sector policy and administrative management [14010]',1],
+['SDG 16.6','Other social infrastructure and services [160]',1],
+['Other social infrastructure and services [160]','Housing policy and administrative management [16030]',1],
+['SDG 16.6','Transport and Storage [210]',1],
+['Transport and Storage [210]','Transport policy and administrative management [21010]',1],
+['SDG 16.6','Communication [220]',1],
+['Communication [220]','Communications policy and administrative management [22010]',1],
+['SDG 16.6','Energy generation, distribution and efficiency [230]',1],
+['Energy generation, distribution and efficiency [230]','Energy policy and administrative management [23110]',1],
+['SDG 16.6','Banking and Financial Services [240]',2],
+['Banking and Financial Services [240]','Financial policy and administrative management [24010]',1],
+['Banking and Financial Services [240]','Monetary institutions [24020]',1],
+['SDG 16.6','Business and other services [250]',1],
+['Business and other services [250]','Business support services and institutions [25010]',1],
+['SDG 16.6','Agriculture [311]',1],
+['Agriculture [311]','Agricultural policy and administrative management [31110]',1],
+['SDG 16.6','Forestry [312]',1],
+['Forestry [312]','Forestry policy and administrative management [31210]',1],
+['SDG 16.6','Fishery [313]',1],
+['Fishery [313]','Fishing policy and administrative management [31310]',1],
+['SDG 16.6','Industry [321]',1],
+['Industry [321]','Industrial policy and administrative management [32110]',1],
+['SDG 16.6','Mineral resources and Mining [322]',1],
+['Mineral resources and Mining [322]','Mineral/mining policy and administrative management [32210]',1],
+['SDG 16.6','Construction [323]',1],
+['Construction [323]','Construction policy and administrative management [32310]',1],
+['SDG 16.6','Trade policy and Regulations [331]',1],
+['Trade policy and Regulations [331]','Trade policy and administrative Management [33110]',1],
+['SDG 16.6','Tourism [322]',1],
+['Tourism [322]','Tourism policy and administrative management [33210]',1],
+['SDG 16.6','General environmental protection [410]',1],
+['General environmental protection [410]','Environmental policy and administrative management [41010]',1],
+['SDG 16.7','Government and civil society, general [151]',3],
+['Government and civil society, general [151]','Democratic participation and civil society [15150]',1],
+['Government and civil society, general [151]','Elections [15151]',1],
+['Government and civil society, general [151]','Legislatures and political parties [15152]',1],
+['SDG 16.8','Trade policy and Regulations [331]',1],
+['Trade policy and Regulations [331]','Multilateral trade negotiations [33140]',1],
+['SDG 16.10','Government and civil society, general [151]',2],
+['Government and civil society, general [151]','Media and free flow of information [15153]',1],
+['Government and civil society, general [151]','Human rights [15160]',1]
+
+    ]);
+
+    // Set chart options
+    var options = {
+      'width': 1000,
+      'height': 1200,
+    sankey: {
+        node: {
+            labelPadding: 15
+        }
+        
+    }
+    
+    //chartArea: {  width: "10%", height: "50%" }
+      //'title': 'Measuring the Peacebuilding and Statebuilding Goals',
+      //'legend': 'right'
+      
+      //sankey: { node: { nodePadding: 80 } },
+      //sankey: { 
+        //node: { label: { labelPadding: 10 } }},
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
